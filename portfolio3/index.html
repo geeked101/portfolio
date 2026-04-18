@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeff Wachira — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@400;500;600;700;800&family=Inconsolata:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Jeff<em>.</em></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/254702063163" class="nav-cta" target="_blank">Hire me</a>
+    <button class="burger" id="burger" aria-label="menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mob-nav" id="mob-nav">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+
+      <div class="hero-left">
+        <p class="tag fade-up">Full-Stack Developer &mdash; Nairobi, Kenya</p>
+
+        <h1 class="hero-name">
+          <span class="clip-wrap"><span class="clip-line fade-clip">Kariuki</span></span>
+          <span class="clip-wrap"><span class="clip-line italic fade-clip" style="--delay:.1s">Jeff</span></span>
+          <span class="clip-wrap"><span class="clip-line fade-clip" style="--delay:.2s">Wachira</span></span>
+        </h1>
+
+        <p class="hero-desc fade-up" style="--delay:.32s">
+          Building digital tools that solve real problems — from AI chatbots for Kenyan farmers to delivery platforms serving Nairobi.
+        </p>
+
+        <div class="hero-ctas fade-up" style="--delay:.44s">
+          <a href="#work" class="btn-fill">See my work</a>
+          <a href="https://github.com/geeked101" target="_blank" class="btn-line">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-up" style="--delay:.2s">
+        <div class="photo-frame">
+          <img src="img/jeff.jpg" alt="Jeff Wachira" class="photo-img">
+        </div>
+        <div class="hero-stats">
+          <div class="hstat">
+            <b class="hstat-n" data-target="4">0</b>
+            <span>Projects shipped</span>
+          </div>
+          <div class="hstat">
+            <b class="hstat-n" data-target="2">0</b>
+            <span>Years building</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll fade-up" style="--delay:.6s">
+      <span>Scroll down</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- DIVIDER — tech list, static, tasteful -->
+  <div class="tech-bar">
+    <div class="tech-bar-inner">
+      <span>Next.js</span>
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Supabase</span>
+      <span>M-Pesa API</span>
+      <span>Docker</span>
+      <span>Node.js</span>
+      <span>Python</span>
+      <span>Firebase</span>
+      <span>RAG / AI</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about section-gap" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+
+        <div class="about-left">
+          <p class="eyebrow fade-up">01 &mdash; About</p>
+          <h2 class="section-title fade-up" style="--delay:.08s">Who I<br/><em>am.</em></h2>
+        </div>
+
+        <div class="about-right">
+          <p class="body-text fade-up" style="--delay:.12s">
+            I'm a Computer Science student at <strong>Mama Ngina University College</strong> with a passion for building full-stack web applications using <strong>Next.js, React, and Supabase</strong>.
+          </p>
+          <p class="body-text fade-up" style="--delay:.2s">
+            I enjoy creating applications focused on solving real-world problems — from last-mile delivery in Nairobi to AI-powered agricultural tools for local farming communities. I'm comfortable across the stack and keen to grow in scalable systems and AI integration.
+          </p>
+
+          <div class="contact-pills fade-up" style="--delay:.36s">
+            <a href="mailto:kjeff8244@gmail.com">kjeff8244@gmail.com</a>
+            <a href="tel:+254702063163">+254 702 063 163</a>
+            <a href="https://github.com/geeked101" target="_blank">github.com/geeked101</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work section-gap" id="work">
+    <div class="wrap">
+      <p class="eyebrow fade-up">02 &mdash; Work</p>
+      <h2 class="section-title fade-up" style="--delay:.06s">Selected<br/><em>projects.</em></h2>
+
+      <!-- Featured project -->
+      <div class="proj-featured fade-up" style="--delay:.12s">
+        <div class="pf-info">
+          <div class="pf-meta">
+            <span class="proj-no">01</span>
+            <span class="proj-type">Marketplace &middot; Full-Stack</span>
+          </div>
+          <h3>Shop — Full-Stack Delivery Platform</h3>
+          <p>Delivery marketplace linking Nairobi shops (pharmacies, restaurants) with customers and boda-boda riders for last-mile delivery. Integrated M-Pesa Daraja API for payments(current dev); implemented real-time state management. Handled authentication, product management, and order flow end-to-end.</p>
+          <div class="chips">
+            <span>Next.js 15</span><span>Supabase</span><span>TypeScript</span><span>Tailwind CSS</span><span>Zustand</span><span>Vercel</span>
+          </div>
+          <a href="https://shop-five-cyan.vercel.app/" class="text-link" target="_blank">View project ↗</a>
+      </div>
+
+      <!-- 3 smaller projects -->
+      <div class="proj-list">
+
+        <div class="proj-item fade-up" style="--delay:.05s">
+          <div class="pi-top">
+            <span class="proj-no">02</span>
+            <a href="https://unniconnect.vercel.app" class="pi-link" target="_blank">↗</a>
+          </div>
+          <h3>Unniconnect</h3>
+          <p>University social platform — posts, announcements, and a student marketplace. Secure auth via Firebase (Google OAuth &amp; email/password).</p>
+          <div class="chips sm"><span>Next.js</span><span>Firebase</span><span>Tailwind CSS</span></div>
+        </div>
+
+        <div class="proj-item fade-up" style="--delay:.13s">
+          <div class="pi-top">
+            <span class="proj-no">03</span>
+            <a href="https://wine.vercel.app" class="pi-link" target="_blank">↗</a>
+          </div>
+          <h3>Pulse Fitness</h3>
+          <p>Responsive single-page gym website — services, programs, and membership plans. Mobile-first design with clean UI/UX.</p>
+          <div class="chips sm"><span>React + Vite</span><span>Tailwind CSS</span></div>
+        </div>
+
+        <div class="proj-item fade-up" style="--delay:.22s">
+          <div class="pi-top">
+            <span class="proj-no">04</span>
+            <a href="https://github.com/geeked101/Shamba-bot" class="pi-link" target="_blank">↗</a>
+          </div>
+          <h3>Shamba Bot</h3>
+          <p>Multilingual RAG chatbot for Kenyan farmers — agricultural advice in Kiswahili and Kikuyu. Built on a RAG pipeline.</p>
+          <div class="chips sm"><span>Python</span><span>Docker</span><span>RAG</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK + EDU -->
+  <section class="stack section-gap" id="stack">
+    <div class="wrap">
+      <p class="eyebrow fade-up">03 &mdash; Stack</p>
+      <h2 class="section-title fade-up" style="--delay:.06s">Tools I<br/><em>use.</em></h2>
+
+      <div class="stack-grid">
+        <div class="stack-block fade-up" style="--delay:.1s">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML &middot; CSS &middot; JavaScript</li>
+            <li>React &amp; Next.js 15</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="stack-block fade-up" style="--delay:.17s">
+          <h4>Backend &amp; Data</h4>
+          <ul>
+            <li>Node.js &middot; Firebase</li>
+            <li>Supabase</li>
+            <li>MongoDB &middot; MySQL</li>
+          </ul>
+        </div>
+        <div class="stack-block fade-up" style="--delay:.24s">
+          <h4>Tools</h4>
+          <ul>
+            <li>Git / GitHub &middot; Docker</li>
+            <li>Vercel &middot; VS Code</li>
+            <li>M-Pesa Daraja API</li>
+          </ul>
+        </div>
+        <div class="stack-block fade-up" style="--delay:.31s">
+          <h4>Other</h4>
+          <ul>
+            <li>Zustand</li>
+            <li>RAG Pipeline</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu-section fade-up" style="--delay:.15s">
+        <h3 class="edu-heading">Education</h3>
+        <div class="edu-rows">
+          <div class="edu-row">
+            <span class="edu-yr">2023 – Present</span>
+            <div class="edu-info">
+              <strong>B.Sc. Computer Science</strong>
+              <span>Mama Ngina University College, Gatundu</span>
+            </div>
+          </div>
+          <div class="edu-row">
+            <span class="edu-yr">2023 – 2024</span>
+            <div class="edu-info">
+              <strong>Certified Public Accountant — Level 1</strong>
+              <span>Kirinyaga Institute of Professional Studies</span>
+            </div>
+          </div>
+          <div class="edu-row">
+            <span class="edu-yr">2019 – 2022</span>
+            <div class="edu-info">
+              <strong>KCSE &mdash; B Plain</strong>
+              <span>Thika High School</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section-gap" id="contact">
+    <div class="wrap">
+      <p class="eyebrow light fade-up">04 &mdash; Contact</p>
+      <h2 class="contact-title fade-up" style="--delay:.08s">
+        Let's build<br/><em>something.</em>
+      </h2>
+      <div class="contact-actions fade-up" style="--delay:.26s">
+        <a href="mailto:kjeff8244@gmail.com" class="btn-fill">kjeff8244@gmail.com</a>
+        <a href="https://github.com/geeked101" target="_blank" class="btn-line light">GitHub ↗</a>
+        <span class="contact-phone">+254 702 063 163</span>
+      </div>
+    </div>
+    <div class="bg-word" aria-hidden="true">JEFF</div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span>Kariuki Jeff Wachira &copy; 2025</span>
+      <span>Gatundu, Kenya</span>
+      <a href="https://github.com/geeked101" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
