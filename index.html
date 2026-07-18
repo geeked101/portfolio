@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jeff Wachira — Full-stack developer building web apps with Next.js, React, and Supabase." />
+  <meta property="og:title" content="Jeff Wachira — Developer" />
+  <meta property="og:description" content="Full-stack developer building web apps with Next.js, React, and Supabase." />
+  <meta property="og:image" content="img/jeff2.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f9ffe7" />
   <title>Jeff Wachira — Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Syne:wght@400;500;600;700;800&family=Inconsolata:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="favicon-tech.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+
 </head>
+
 <body>
 
   <div class="grain" aria-hidden="true"></div>
@@ -21,8 +34,12 @@
       <li><a href="#work">Work</a></li>
       <li><a href="#stack">Stack</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/jeff-kariuki-35a57029a/" target="_blank"
+          rel="noopener noreferrer">LinkedIn ↗</a></li>
     </ul>
-    <a href="https://wa.me/254702063163" class="nav-cta" target="_blank">Hire me</a>
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    <a href="https://wa.me/254702063163" class="nav-cta" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
     <button class="burger" id="burger" aria-label="menu">
       <span></span><span></span>
     </button>
@@ -40,7 +57,7 @@
     <div class="hero-inner">
 
       <div class="hero-left">
-        <p class="tag fade-up">Full-Stack Developer &mdash; Nairobi, Kenya</p>
+        <p class="tag fade-up">Full-Stack Developer</p>
 
         <h1 class="hero-name">
           <span class="clip-wrap"><span class="clip-line fade-clip">Kariuki</span></span>
@@ -48,30 +65,29 @@
           <span class="clip-wrap"><span class="clip-line fade-clip" style="--delay:.2s">Wachira</span></span>
         </h1>
 
-        <p class="hero-desc fade-up" style="--delay:.32s">
-          Building digital tools that solve real problems — from AI chatbots for Kenyan farmers to delivery platforms serving Nairobi.
-        </p>
+        <p class="hero-tagline fade-up" style="--delay:.32s">Building scalable digital tools that solve real-world
+          problems — from AI-powered assistants to last-mile delivery platforms.</p>
 
-        <div class="hero-ctas fade-up" style="--delay:.44s">
-          <a href="#work" class="btn-fill">See my work</a>
-          <a href="https://github.com/geeked101" target="_blank" class="btn-line">GitHub ↗</a>
+        <div class="hero-stats-row fade-up" style="--delay:.40s">
+          <div class="hstat-pill"><span class="hstat-n">4</span><span>Shipped Projects</span></div>
+          <div class="hstat-pill"><span class="hstat-n">2+</span><span>Years Building</span></div>
+          <div class="hstat-pill"><span class="hstat-n">Open</span><span>to Work</span></div>
+        </div>
+
+        <div class="hero-ctas fade-up" style="--delay:.52s">
+          <a href="https://github.com/geeked101" target="_blank" rel="noopener noreferrer" class="btn-fill">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/jeff-kariuki-35a57029a/" target="_blank" rel="noopener noreferrer"
+            class="btn-fill btn-linkedin">LinkedIn ↗</a>
+          <a href="mailto:kjeff8244@gmail.com" class="btn-line">Email Me</a>
         </div>
       </div>
 
       <div class="hero-right fade-up" style="--delay:.2s">
         <div class="photo-frame">
-          <img src="img/jeff.jpg" alt="Jeff Wachira" class="photo-img">
+          <img src="img/jeff2.jpg" alt="Jeff Wachira" class="photo-img" width="400" height="500" loading="lazy"
+            decoding="async">
         </div>
-        <div class="hero-stats">
-          <div class="hstat">
-            <b class="hstat-n" data-target="4">0</b>
-            <span>Projects shipped</span>
-          </div>
-          <div class="hstat">
-            <b class="hstat-n" data-target="2">0</b>
-            <span>Years building</span>
-          </div>
-        </div>
+
       </div>
 
     </div>
@@ -82,21 +98,7 @@
     </div>
   </section>
 
-  <!-- DIVIDER — tech list, static, tasteful -->
-  <div class="tech-bar">
-    <div class="tech-bar-inner">
-      <span>Next.js</span>
-      <span>React</span>
-      <span>TypeScript</span>
-      <span>Supabase</span>
-      <span>M-Pesa API</span>
-      <span>Docker</span>
-      <span>Node.js</span>
-      <span>Python</span>
-      <span>Firebase</span>
-      <span>RAG / AI</span>
-    </div>
-  </div>
+
 
   <!-- ABOUT -->
   <section class="about section-gap" id="about">
@@ -105,21 +107,24 @@
 
         <div class="about-left">
           <p class="eyebrow fade-up">01 &mdash; About</p>
-          <h2 class="section-title fade-up" style="--delay:.08s">Who I<br/><em>am.</em></h2>
+          <h2 class="section-title fade-up" style="--delay:.08s">Who I<br /><em>am.</em></h2>
         </div>
 
         <div class="about-right">
           <p class="body-text fade-up" style="--delay:.12s">
-            I'm a Computer Science student at <strong>Mama Ngina University College</strong> with a passion for building full-stack web applications using <strong>Next.js, React, and Supabase</strong>.
+            I'm a Computer Science student at <strong>Mama Ngina University College</strong> focused on building
+            full-stack web applications with <strong>Next.js, React, and Supabase</strong>.
           </p>
           <p class="body-text fade-up" style="--delay:.2s">
-            I enjoy creating applications focused on solving real-world problems — from last-mile delivery in Nairobi to AI-powered agricultural tools for local farming communities. I'm comfortable across the stack and keen to grow in scalable systems and AI integration.
+            I build tools that solve real problems — from last-mile delivery systems in emerging markets to AI-powered
+            agricultural assistants. I'm comfortable across the stack and growing in scalable systems and AI
+            integration.
           </p>
 
           <div class="contact-pills fade-up" style="--delay:.36s">
             <a href="mailto:kjeff8244@gmail.com">kjeff8244@gmail.com</a>
             <a href="tel:+254702063163">+254 702 063 163</a>
-            <a href="https://github.com/geeked101" target="_blank">github.com/geeked101</a>
+            <a href="https://github.com/geeked101" target="_blank" rel="noopener noreferrer">github.com/geeked101</a>
           </div>
         </div>
 
@@ -131,54 +136,112 @@
   <section class="work section-gap" id="work">
     <div class="wrap">
       <p class="eyebrow fade-up">02 &mdash; Work</p>
-      <h2 class="section-title fade-up" style="--delay:.06s">Selected<br/><em>projects.</em></h2>
+      <h2 class="section-title fade-up" style="--delay:.06s">Selected<br /><em>projects.</em></h2>
+    </div>
 
-      <!-- Featured project -->
-      <div class="proj-featured fade-up" style="--delay:.12s">
-        <div class="pf-info">
-          <div class="pf-meta">
-            <span class="proj-no">01</span>
-            <span class="proj-type">Marketplace &middot; Full-Stack</span>
-          </div>
-          <h3>Shop — Full-Stack Delivery Platform</h3>
-          <p>Delivery marketplace linking Nairobi shops (pharmacies, restaurants) with customers and boda-boda riders for last-mile delivery. Integrated M-Pesa Daraja API for payments(current dev); implemented real-time state management. Handled authentication, product management, and order flow end-to-end.</p>
-          <div class="chips">
-            <span>Next.js 15</span><span>Supabase</span><span>TypeScript</span><span>Tailwind CSS</span><span>Zustand</span><span>Vercel</span>
-          </div>
-          <a href="https://shop-five-cyan.vercel.app/" class="text-link" target="_blank">View project ↗</a>
-      </div>
-
-      <!-- 3 smaller projects -->
+    <div class="wrap">
       <div class="proj-list">
 
-        <div class="proj-item fade-up" style="--delay:.05s">
+        <div class="proj-item fade-up" data-project="unniconnect" data-url="https://unniconnect.vercel.app">
           <div class="pi-top">
-            <span class="proj-no">02</span>
-            <a href="https://unniconnect.vercel.app" class="pi-link" target="_blank">↗</a>
+            <h3>UnniConnect</h3>
+            <a href="https://unniconnect.vercel.app" target="_blank" rel="noopener noreferrer" class="pi-link"
+              aria-label="Visit UnniConnect">↗</a>
           </div>
-          <h3>Unniconnect</h3>
-          <p>University social platform — posts, announcements, and a student marketplace. Secure auth via Firebase (Google OAuth &amp; email/password).</p>
-          <div class="chips sm"><span>Next.js</span><span>Firebase</span><span>Tailwind CSS</span></div>
+          <div class="proj-img-wrap">
+            <img src="img/Unniconnect.png" alt="UnniConnect campus social network screenshot" class="proj-img"
+              loading="lazy" decoding="async">
+          </div>
+          <p>A campus social network I built for university students — real-time notifications, event management, and a
+            dual-feed system for campus-wide and personal content.</p>
+          <div class="chips">
+            <span>Next.js</span>
+            <span>Supabase</span>
+            <span>Realtime</span>
+            <span>Tailwind</span>
+          </div>
+          <div class="what-i-learned">
+            <h4>What I Learned:</h4>
+            <p>Mastered real-time subscriptions with Supabase using WebSocket connections. Gained experience optimizing
+              database queries for high concurrent user traffic.</p>
+          </div>
         </div>
 
-        <div class="proj-item fade-up" style="--delay:.13s">
+        <div class="proj-item fade-up" style="--delay:.06s" data-project="shamba-ai"
+          data-url="https://shamba-bot-virid.vercel.app">
           <div class="pi-top">
-            <span class="proj-no">03</span>
-            <a href="https://pulse2-lime.vercel.app/" class="pi-link" target="_blank">↗</a>
+            <h3>Shamba AI</h3>
+            <a href="https://shamba-bot-virid.vercel.app" target="_blank" rel="noopener noreferrer" class="pi-link"
+              aria-label="Visit Shamba AI">↗</a>
           </div>
-          <h3>Pulse Fitness</h3>
-          <p>Responsive single-page gym website — services, programs, and membership plans. Mobile-first design with clean UI/UX.</p>
-          <div class="chips sm"><span>React + Vite</span><span>Tailwind CSS</span></div>
+          <div class="proj-img-wrap">
+            <img src="img/SHAMBABOT.png" alt="Shamba AI agricultural assistant screenshot" class="proj-img"
+              loading="lazy" decoding="async">
+          </div>
+          <p>An AI agricultural assistant that gives grounded farming advice to Kenyan farmers. Built with a RAG
+            pipeline to keep responses accurate and context-aware.</p>
+          <div class="chips">
+            <span>React</span>
+            <span>RAG</span>
+            <span>Python</span>
+            <span>FastAPI</span>
+          </div>
+          <div class="what-i-learned">
+            <h4>What I Learned:</h4>
+            <p>Built a RAG pipeline utilizing vector search for contextual retrieval. Tuned document chunking strategies
+              to improve response relevance for agricultural data.</p>
+          </div>
         </div>
 
-        <div class="proj-item fade-up" style="--delay:.22s">
+        <div class="proj-item fade-up" style="--delay:.12s" data-project="nexus-shop"
+          data-url="https://shop-five-cyan.vercel.app/">
           <div class="pi-top">
-            <span class="proj-no">04</span>
-            <a href="https://shamba-bot-virid.vercel.app" class="pi-link" target="_blank">↗</a>
+            <h3>Nexus Shop</h3>
+            <a href="https://shop-five-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="pi-link"
+              aria-label="Visit Nexus Shop">↗</a>
           </div>
-          <h3>Shamba Bot</h3>
-          <p>Multilingual RAG chatbot for Kenyan farmers — agricultural advice in Kiswahili and Kikuyu. Built on a RAG pipeline.</p>
-          <div class="chips sm"><span>Python</span><span>Docker</span><span>RAG</span></div>
+          <div class="proj-img-wrap">
+            <img src="img/shop.png" alt="Nexus Shop e-commerce platform screenshot" class="proj-img" loading="lazy"
+              decoding="async">
+          </div>
+          <p>An e-commerce platform focused on smooth UX and secure M-Pesa payments. Handles product discovery, cart,
+            and checkout flow for a local retail context.</p>
+          <div class="chips">
+            <span>Next.js</span>
+            <span>M-Pesa API</span>
+            <span>Supabase</span>
+            <span>Stripe</span>
+          </div>
+          <div class="what-i-learned">
+            <h4>What I Learned:</h4>
+            <p>Integrated M-Pesa Daraja API using STK push callbacks. Developed a resilient webhook handler to reliably
+              process payment confirmations and handle edge cases.</p>
+          </div>
+        </div>
+
+        <div class="proj-item fade-up" style="--delay:.18s" data-project="pulse-motion"
+          data-url="https://pulse2-lime.vercel.app/">
+          <div class="pi-top">
+            <h3>Pulse Motion</h3>
+            <a href="https://pulse2-lime.vercel.app/" target="_blank" rel="noopener noreferrer" class="pi-link"
+              aria-label="Visit Pulse Motion">↗</a>
+          </div>
+          <div class="proj-img-wrap proj-img-placeholder">
+            <span class="proj-placeholder-label">↗ Live Preview Available</span>
+          </div>
+          <p>A motion-driven web experience I designed to explore GSAP animations and scroll-based storytelling. Focused
+            on fluid transitions and performance.</p>
+          <div class="chips">
+            <span>GSAP</span>
+            <span>ScrollTrigger</span>
+            <span>Vanilla JS</span>
+            <span>CSS</span>
+          </div>
+          <div class="what-i-learned">
+            <h4>What I Learned:</h4>
+            <p>Utilized ScrollTrigger to link complex animations to scroll progress. Focused on performance optimization
+              and efficient DOM updates for 60fps animations.</p>
+          </div>
         </div>
 
       </div>
@@ -189,41 +252,45 @@
   <section class="stack section-gap" id="stack">
     <div class="wrap">
       <p class="eyebrow fade-up">03 &mdash; Stack</p>
-      <h2 class="section-title fade-up" style="--delay:.06s">Tools I<br/><em>use.</em></h2>
+      <h2 class="section-title fade-up" style="--delay:.06s">Tools I<br /><em>use.</em></h2>
 
       <div class="stack-grid">
         <div class="stack-block fade-up" style="--delay:.1s">
           <h4>Frontend</h4>
-          <ul>
-            <li>HTML &middot; CSS &middot; JavaScript</li>
-            <li>React &amp; Next.js 15</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-          </ul>
+          <div class="tech-icons">
+            <span><i class="devicon-react-original"></i> React</span>
+            <span><i class="devicon-nextjs-plain"></i> Next.js</span>
+            <span><i class="devicon-typescript-plain"></i> TypeScript</span>
+            <span><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</span>
+            <span><i class="devicon-html5-plain"></i> HTML/CSS/JS</span>
+          </div>
         </div>
         <div class="stack-block fade-up" style="--delay:.17s">
           <h4>Backend &amp; Data</h4>
-          <ul>
-            <li>Node.js &middot; Firebase</li>
-            <li>Supabase</li>
-            <li>MongoDB &middot; MySQL</li>
-          </ul>
+          <div class="tech-icons">
+            <span><i class="devicon-nodejs-plain"></i> Node.js</span>
+            <span><i class="devicon-supabase-plain"></i> Supabase</span>
+            <span><i class="devicon-firebase-plain"></i> Firebase</span>
+            <span><i class="devicon-mongodb-plain"></i> MongoDB</span>
+            <span><i class="devicon-mysql-plain"></i> MySQL</span>
+          </div>
         </div>
         <div class="stack-block fade-up" style="--delay:.24s">
           <h4>Tools</h4>
-          <ul>
-            <li>Git / GitHub &middot; Docker</li>
-            <li>Vercel &middot; VS Code</li>
-            <li>M-Pesa Daraja API</li>
-          </ul>
+          <div class="tech-icons">
+            <span><i class="devicon-git-plain"></i> Git</span>
+            <span><i class="devicon-docker-plain"></i> Docker</span>
+            <span><i class="devicon-vercel-original"></i> Vercel</span>
+            <span><i class="devicon-vscode-plain"></i> VS Code</span>
+            <span> M-Pesa API</span>
+          </div>
         </div>
         <div class="stack-block fade-up" style="--delay:.31s">
           <h4>Other</h4>
-          <ul>
-            <li>Zustand</li>
-            <li>RAG Pipeline</li>
-            <li>Python</li>
-          </ul>
+          <div class="tech-icons">
+            <span><i class="devicon-python-plain"></i> Python</span>
+            <span> 🤖 RAG Pipeline</span>
+          </div>
         </div>
       </div>
 
@@ -233,27 +300,43 @@
   <!-- CONTACT -->
   <section class="contact-section section-gap" id="contact">
     <div class="wrap">
-      <p class="eyebrow light fade-up">04 &mdash; Contact</p>
+      <p class="eyebrow light fade-up">04 &mdash; Let's Talk</p>
       <h2 class="contact-title fade-up" style="--delay:.08s">
-        Let's build<br/><em>something.</em>
+        Have a project<br /><em>in mind?</em>
       </h2>
+
       <div class="contact-actions fade-up" style="--delay:.26s">
-        <a href="mailto:kjeff8244@gmail.com" class="btn-fill">kjeff8244@gmail.com</a>
-        <a href="https://github.com/geeked101" target="_blank" class="btn-line light">GitHub ↗</a>
-        <span class="contact-phone">+254 702 063 163</span>
+        <a href="mailto:kjeff8244@gmail.com" class="btn-fill">Email Me</a>
+        <a href="https://www.linkedin.com/in/jeff-kariuki-35a57029a/" target="_blank" rel="noopener noreferrer"
+          class="btn-line light">LinkedIn ↗</a>
+        <a href="https://github.com/geeked101" target="_blank" rel="noopener noreferrer" class="btn-line light">GitHub
+          ↗</a>
+        <a href="resume.pdf" class="btn-line light" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="https://wa.me/254702063163" target="_blank" rel="noopener noreferrer" class="contact-phone">WhatsApp:
+          +254 702 063 163</a>
       </div>
     </div>
-    <div class="bg-word" aria-hidden="true">JEFF</div>
   </section>
 
   <footer class="footer">
     <div class="wrap footer-row">
-      <span>Kariuki Jeff Wachira &copy; 2025</span>
-      <span>Gatundu, Kenya</span>
-      <a href="https://github.com/geeked101" target="_blank">GitHub</a>
+      <span>Kariuki Jeff Wachira &copy; 2026</span>
+      <span>Nairobi, Kenya</span>
+      <a href="https://github.com/geeked101" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/jeff-kariuki-35a57029a/" target="_blank"
+        rel="noopener noreferrer">LinkedIn</a>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-V/wF1S9rYyW1P83M0Y2Y7+p79H1bH8Jj+3wZ2vVlX5rS27O7a7B2T7UoKj44N3V6E/2e4pUvD0D6nKj5Z/y7Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

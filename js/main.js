@@ -1,5 +1,5 @@
 /* ============================================================
-   Jeff Wachira Portfolio JS v3 — clean, modern, and robust
+   Jeff Wachira Portfolio JS v3 — enhanced with new features
    ============================================================ */
 
 (() => {
@@ -59,53 +59,6 @@
     clipObserver.observe(el);
   });
 
-  /* ---- COUNT-UP FOR HERO STATS ---- */
-  /**
-   * Animates numbers from 0 to target
-   * @param {HTMLElement} el
-   * @param {number} target
-   */
-  const countUp = (el, target) => {
-    let start = null;
-    const duration = 1200;
-    const step = (ts) => {
-      if (!start) start = ts;
-      const p = Math.min((ts - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(eased * target);
-      if (p < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
-
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.querySelectorAll('.hstat-n').forEach((el) => {
-        const t = parseInt(el.dataset.target || '0', 10);
-        countUp(el, t);
-      });
-      statsObserver.unobserve(entry.target);
-    });
-  }, { threshold: 0.4 });
-
-  const statsEl = document.querySelector('.hero-stats');
-  if (statsEl) statsObserver.observe(statsEl);
-
-  /* ---- STACK BLOCK HOVER — subtle lift ---- */
-  document.querySelectorAll('.stack-block').forEach((block) => {
-    block.addEventListener('mouseenter', () => {
-      block.style.transition = 'background .22s';
-    });
-  });
-
-  /* ---- PROJECT ITEM HOVER BORDER ACCENT ---- */
-  document.querySelectorAll('.proj-item').forEach((item) => {
-    item.addEventListener('mouseenter', () => {
-      item.style.transition = 'background .22s';
-    });
-  });
-
   /* ---- INITIAL PASS — show already-visible elements ---- */
   requestAnimationFrame(() => {
     const vh = window.innerHeight;
@@ -119,5 +72,42 @@
       const r = el.getBoundingClientRect();
       if (r.top < vh * 0.92) el.classList.add('show');
     });
+  });
+
+  /* ---- DARK MODE TOGGLE ---- */
+  const darkModeBtn = document.getElementById('dark-mode-toggle');
+  if (darkModeBtn) {
+    darkModeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+    });
+    // Restore preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+  }
+
+
+
+  /* ---- CLICKABLE PROJECT CARDS ---- */
+  document.querySelectorAll('.proj-item[data-url]').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      // Don't override clicks on inner links (e.g. the ↗ arrow)
+      if (e.target.closest('a')) return;
+      window.open(card.dataset.url, '_blank', 'noopener,noreferrer');
+    });
+  });
+
+  /* ---- KEYBOARD ACCESSIBILITY ---- */
+  document.addEventListener('keydown', (e) => {
+    // Spacebar to scroll (only when not typing in a field)
+    if (e.code === 'Space' && !['INPUT','TEXTAREA','SELECT'].includes(e.target.tagName)) {
+      e.preventDefault();
+      window.scrollBy({ top: window.innerHeight * 0.8, behavior: 'smooth' });
+    }
+    // Escape to go to top
+    if (e.code === 'Escape') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   });
 })();
